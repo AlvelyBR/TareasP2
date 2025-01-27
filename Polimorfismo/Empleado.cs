@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Polimorfismo
 {
-    internal class Empleado
+     public abstract class Empleado
     {
+        public string nombre {  get; set; }
+        public string apellido {  get; set; }
+
+        public Empleado(string nombre, string apellido) 
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+
+        
+
+        public abstract decimal Salario();
+
     }
 }
